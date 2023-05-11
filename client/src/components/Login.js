@@ -45,7 +45,7 @@ const Login = (props) => {
             mode: 'cors',
         }
 
-        fetch(`https://footycards-production-39e4.up.railway.app/authenticate`, requestOptions)
+        fetch(`https://footycards-production.up.railway.app/authenticate`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {

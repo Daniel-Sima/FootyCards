@@ -15,7 +15,7 @@ const Ranking = (props) => {
             headers: headers,
         }
 
-        fetch(`https://footycards-production-39e4.up.railway.app/ranking`, requestOptions)
+        fetch(`https://footycards-production.up.railway.app/ranking`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 setRanking(data)

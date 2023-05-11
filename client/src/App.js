@@ -23,7 +23,7 @@ function App() {
         credentials: "include", // to have cookies
       }
       let i = setInterval(() => {
-        fetch(`https://footycards-production-39e4.up.railway.app/refresh`, requestOptions)
+        fetch(`https://footycards-production.up.railway.app/refresh`, requestOptions)
           .then((response) => response.json())
           .then((data) => {
             if (data.access_token) {
@@ -53,7 +53,7 @@ function App() {
         credentials: "include", // to have cookies
       }
 
-      fetch(`https://footycards-production-39e4.up.railway.app/refresh`, requestOptions)
+      fetch(`https://footycards-production.up.railway.app/refresh`, requestOptions)
         .then((response) => response.json())
         .then((data) => {
           if (data.access_token) {

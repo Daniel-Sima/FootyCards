@@ -62,7 +62,7 @@ const Club = (props) => {
             headers: headers,
         }
 
-        fetch(`https://footycards-production-39e4.up.railway.app/userInfoCookies`, requestOptions)
+        fetch(`https://footycards-production.up.railway.app/userInfoCookies`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 setUser(data)
@@ -84,7 +84,7 @@ const Club = (props) => {
                     body: JSON.stringify(payload),
                 }
 
-                fetch(`https://footycards-production-39e4.up.railway.app/userInfo`, requestOptions)
+                fetch(`https://footycards-production.up.railway.app/userInfo`, requestOptions)
                     .then((response) => response.json())
                     .then((data) => {
                         setUser(data)

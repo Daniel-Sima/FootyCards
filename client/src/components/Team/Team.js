@@ -15,7 +15,7 @@ const Team = (props) => {
       headers: headers,
     }
 
-    fetch(`https://footycards-production-39e4.up.railway.app/userInfoCookies`, requestOptions)
+    fetch(`https://footycards-production.up.railway.app/userInfoCookies`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         let newTeam = []
@@ -38,7 +38,7 @@ const Team = (props) => {
           body: JSON.stringify(payload),
         }
 
-        fetch(`https://footycards-production-39e4.up.railway.app/userInfo`, requestOptions)
+        fetch(`https://footycards-production.up.railway.app/userInfo`, requestOptions)
           .then((response) => response.json())
           .then((data) => {
             let newTeam = []

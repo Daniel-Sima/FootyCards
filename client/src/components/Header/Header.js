@@ -21,7 +21,7 @@ const Header = (props) => {
       method: "GET",
       credentials: "include",
     }
-    fetch(`https://footycards-production-39e4.up.railway.app/logout`, requestOptions)
+    fetch(`https://footycards-production.up.railway.app/logout`, requestOptions)
     .catch(error => {
       console.log("error loggin out", error);
     })

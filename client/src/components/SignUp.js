@@ -55,7 +55,7 @@ const SignUp = () => {
             body: JSON.stringify(payload),
         }
 
-        fetch(`https://footycards-production-39e4.up.railway.app/register`, requestOptions)
+        fetch(`https://footycards-production.up.railway.app/register`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {

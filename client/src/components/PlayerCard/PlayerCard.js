@@ -17,7 +17,7 @@ const PlayerCard = (props) => {
         player: player,
       }),
     };
-    fetch(`https://footycards-production-39e4.up.railway.app/team`, requestOptions)
+    fetch(`https://footycards-production.up.railway.app/team`, requestOptions)
       .then(async (response) => { // pq async ?
         const status = await response.status;
         if (status === 200) {
@@ -50,7 +50,7 @@ const PlayerCard = (props) => {
         player: player,
       }),
     };
-    fetch(`https://footycards-production-39e4.up.railway.app/team`, requestOptions)
+    fetch(`https://footycards-production.up.railway.app/team`, requestOptions)
       .then(async (response) => {
         const status = await response.status;
         console.log(status)
@@ -78,7 +78,7 @@ const PlayerCard = (props) => {
         player: player,
       }),
     };
-    fetch(`https://footycards-production-39e4.up.railway.app/team`, requestOptions)
+    fetch(`https://footycards-production.up.railway.app/team`, requestOptions)
       .then(async (response) => {
         const status = await response.status;
         // console.log(status)
@@ -111,7 +111,7 @@ const PlayerCard = (props) => {
       headers: headers,
     };
 
-    fetch(`https://footycards-production-39e4.up.railway.app/userInfoCookies`, requestOptions)
+    fetch(`https://footycards-production.up.railway.app/userInfoCookies`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         props.setUser(data);
@@ -129,7 +129,7 @@ const PlayerCard = (props) => {
           body: JSON.stringify(payload),
         }
 
-        fetch(`https://footycards-production-39e4.up.railway.app/userInfo`, requestOptions)
+        fetch(`https://footycards-production.up.railway.app/userInfo`, requestOptions)
           .then((response) => response.json())
           .then((data) => {
             props.setUser(data)
@@ -151,7 +151,7 @@ const PlayerCard = (props) => {
       headers: headers,
     }
 
-    fetch(`https://footycards-production-39e4.up.railway.app/allPlayers`, requestOptions)
+    fetch(`https://footycards-production.up.railway.app/allPlayers`, requestOptions)
       .then((response) => response.json())
       .then((dataMarket) => {
         props.setSortedDataMarket(dataMarket);
@@ -178,7 +178,7 @@ const PlayerCard = (props) => {
         }),
       };
 
-      fetch(`https://footycards-production-39e4.up.railway.app/buyingPlayer`, requestOptions)
+      fetch(`https://footycards-production.up.railway.app/buyingPlayer`, requestOptions)
         .then((response) => response.json())
         .then((data) => {
           if (data.error) {
@@ -217,7 +217,7 @@ const PlayerCard = (props) => {
         }),
       }
 
-      fetch(`https://footycards-production-39e4.up.railway.app/sellingPlayer`, requestOptions)
+      fetch(`https://footycards-production.up.railway.app/sellingPlayer`, requestOptions)
         .then((response) => response.json())
         .then((data) => {
           if (data.error) {

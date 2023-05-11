@@ -102,14 +102,13 @@ func main() {
 
 	// start a web server
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"https://645c48df9b7ec8372c716e5f--darling-pothos-ce2e73.netlify.app"},
+		AllowedOrigins:   []string{"http://localhost:3000"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"Authorization", "Content-Type"},
 		AllowCredentials: true,
 	})
 	handler := c.Handler(mux)
 
-	log.Fatal(http.ListenAndServe("0.0.0.0:"+port, handler))
 	log.Fatal(http.ListenAndServe("0.0.0.0:"+port, handler))
 }
 
