@@ -102,7 +102,7 @@ func main() {
 
 	// start a web server
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"https://645c439b02741b1f840ce5e4--darling-pothos-ce2e73.netlify.app"},
+		AllowedOrigins:   []string{"https://localhost:3000"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"Authorization", "Content-Type"},
 		AllowCredentials: true,
