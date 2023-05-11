@@ -102,7 +102,7 @@ func main() {
 
 	// start a web server
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"https://euphonious-kitsune-652034.netlify.app/"},
+		AllowedOrigins:   []string{"https://euphonious-kitsune-652034.netlify.app"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"Authorization", "Content-Type"},
 		AllowCredentials: true,
