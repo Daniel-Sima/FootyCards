@@ -1,7 +1,7 @@
 # FootyCards
 ## Micro-Projet Web de réalisation d'une application web
 ---
-### Lien de déploiement: [FootyCards](https://incomparable-cuchufli-e8dfab.netlify.app/)
+### Lien de déploiement: [FootyCards](https://euphonious-kitsune-652034.netlify.app/)
  - :warning: Problème avec le refresh (non present en localhost) :warning:
 ---
 ---
