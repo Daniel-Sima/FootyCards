@@ -44,7 +44,7 @@ const Login = (props) => {
             body: JSON.stringify(payload),
         }
 
-        fetch(`/authenticate`, requestOptions)
+        fetch(`https://footycards-production-39e4.up.railway.app/authenticate`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {

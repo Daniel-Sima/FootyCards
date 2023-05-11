@@ -73,7 +73,7 @@ const Market = (props) => {
             headers: headers,
         }
 
-        fetch(`/allPlayers`, requestOptions)
+        fetch(`https://footycards-production-39e4.up.railway.app/allPlayers`, requestOptions)
             .then((response) => response.json())
             .then((dataMarket) => {
                 setDataMarket(dataMarket)
