@@ -102,7 +102,7 @@ func main() {
 
 	// start a web server
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"https://localhost:3000"},
+		AllowedOrigins:   []string{"http://localhost:3000"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"Authorization", "Content-Type"},
 		AllowCredentials: true,
