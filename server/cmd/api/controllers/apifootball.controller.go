@@ -149,13 +149,13 @@ func UsersRaking() {
 						}
 					} else {
 						if users[id].LastUpdate.Day() != time.Now().Day() {
-							users[id].Score = float32(-1)
+							users[id].Score = float32(0)
 							users[id].LastUpdate = time.Now()
 						}
 					}
 				} else {
 					if users[id].LastUpdate.Day() != time.Now().Day() {
-						users[id].Score = float32(-1)
+						users[id].Score = float32(0)
 						users[id].LastUpdate = time.Now()
 					}
 				}
