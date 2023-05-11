@@ -110,6 +110,7 @@ func main() {
 	handler := c.Handler(mux)
 
 	log.Fatal(http.ListenAndServe("0.0.0.0:"+port, handler))
+	log.Fatal(http.ListenAndServe("0.0.0.0:"+port, handler))
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
