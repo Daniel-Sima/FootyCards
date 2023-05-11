@@ -42,6 +42,7 @@ const Login = (props) => {
             },
             credentials: 'include',
             body: JSON.stringify(payload),
+            mode: 'cors',
         }
 
         fetch(`https://footycards-production-39e4.up.railway.app/authenticate`, requestOptions)
