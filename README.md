@@ -1,7 +1,9 @@
 # FootyCards
-## Micro-Projet Web de réalisation d'une application web
+## Micro-Projet Web de réalisation d'une application web  
+Site internet RESTful proposant la commercialisation des cartes de joueurs de football de la Ligue 1 en
+fonction de leur évolution réelle, en utilisant une API dynamique.
 ---
-### Lien de déploiement: [FootyCards](https://euphonious-kitsune-652034.netlify.app/)
+### Lien de déploiement: [FootyCards](https://footy-cards.netlify.app)
  - :warning: Problème avec le refresh (non present en localhost) :warning:
 ---
 ---
